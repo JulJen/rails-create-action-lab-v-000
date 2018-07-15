@@ -17,7 +17,7 @@ class StudentsController < ApplicationController
     @student.last_name = params[:last_name]
     @student.save
     # redirect_to student_path(@student)
-    <%= link_to("student", post_student(student)) %>
+    <%= link_to("students", post_student(student)) %>
   end
 
 end
