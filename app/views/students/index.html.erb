@@ -1,7 +1,9 @@
 <div>
   <ol>
-  <% @students.each do |student| %>
-    <div><%= link_to student.to_s, student_path(student) %></div>
-  <% end %>
+    <li>
+      <% @students.each do |student| %>
+        <div><%= link_to student.to_s, student_path(student) %></div>
+      <% end %>
+    </li>
   </ol>
 </div>
